@@ -1,0 +1,100 @@
+<html>
+<head>
+    <title>Gallery</title>
+    <script>
+        var array=new Array('img1.jpg','img3.jpg','img4.jpg','img5.jpg','img6.jpg','img7.jpg',);
+        var i=0;
+        var j=0;
+        function slide()
+        {
+           j=0;
+           var timer= setInterval(function(){
+                 var a=document.getElementById('photo');
+                    a.src=array[j];
+                    j=j+1;
+                    if(j>5)
+                        {
+                            j=0;
+                        }
+            },2000);
+        }
+        function left()
+        {
+            j=j-1;
+            var b=document.getElementById('photo');
+            b.src=array[j];
+        }
+        function right()
+        {
+            j=j+1;
+            var a=document.getElementById('photo');
+            a.src=array[j];
+        }
+    </script>
+    
+    <style>
+        table,tr
+        {
+            border-radius: 20px;
+        }
+        body
+        {
+            background-color: gainsboro;
+        }
+        .one
+        {
+            margin-left: 50px;
+            float:left;
+        }
+        .container
+        {
+            float:left;
+        }
+        .three
+        {
+            float: right;
+        }
+        
+    .show
+        {
+            border: 2px solid black;
+            width: 900px;
+            height: 500px;
+            border-radius: 10px;
+            margin-left: 50px;
+            margin-top: 20px;
+        }
+        img
+        {
+            border-radius: 10px;
+            width:900px;
+            height: 500px;
+        }
+        input[type=button]
+        {
+            font-weight: bold;
+            padding: 15px;
+            border: 2px solid black;
+            border-radius: 20px;
+        }
+    </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+            <td><input type="button" value="Start Slide Show" onclick="slide()"></td>
+            </tr>
+        </table>
+        <div class="container">
+            
+        <div class="show">
+        <img src="img2.jpeg" id='photo'>
+        </div>
+            <div class="one">
+        <input type="button" value="<<" onclick="left()"></div>
+            <div class=three>
+            <input type="button" value=">>" onclick="right()">
+            </div>
+            </div>
+    </body>
+</html>

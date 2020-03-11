@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Times New Roman";
+  padding: 10px;
+  border: 1px solid black;
+    background-color:beige;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background:black;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+.gr
+    {
+        background-color: lightgray;
+        border-radius: 20px;
+        font-size: 17px;
+        line-height: 30px;
+        border: 1px solid black;
+    }
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+    
+  background-color:beige;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  
+  width: 100%;
+  padding: 0px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color:white;
+  padding: 20px;
+  margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: white;
+  margin-top: 20px;
+    color: black;
+  
+}
+.marq
+    {
+        border-radius: 20px;
+    }    
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+.extra {   
+width: 100%;
+padding: 0;
+}
+}
+
+#timm
+    {
+        color: white;
+        float: right;
+    }
+#datt
+    {
+        color: white;
+        float: left;
+    }
+</style>
+</head>
+<body onload="startTime()">
+
+<div class="header">
+  <h1 style="color: white;">Online Car Sharing</h1>
+  <p style="color:white;">Save Money, Save Time !</p>
+    <span id='datt'>Hello</span>
+    <span id='timm'>Hello</span>
+</div>
+
+<div class="topnav" style="border: 1px solid white;">
+  <a href="login.html">Login </a>
+  <a href="signup.html">Register Now ! </a>
+  <a href="galleryy.html">Gallery</a>
+  <a href="contact.html">Contact Us</a>
+  <a href="about.html">About Us</a>
+  <a href="admin.html" style="float:right">Admin Login</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn" style="border:1px solid black; border-radius: 20px;" >
+    <div class="card" style="background-color: beige;" >
+      <h2>Our Vision</h2>
+      <h5></h5>
+      <div class="fakeimg" style="height:510px;" >
+	<img src="web4.jpg" class="caar" alt="Car" height="500px" width="800px" style="border: 1px solid black; border-radius:30px;">
+	</div>
+      <p style="padding: 10px; color:navy; font-size: 20px;">Our vision is to allow you to share the Car Rides to your destination which can allow you to save efforts, money and time.</p>
+      <p></p>
+    </div>
+    
+  </div>
+  <div class="rightcolumn">
+    <div class="card" style="border:1px solid black; border-radius: 20px; background-color: azure;">
+      <h3>Key Features !</h3>
+         <marquee class="marq" bgcolor = "white" direction = "up" loop=""> 
+        <p class="gr">Comfortable</p>
+        <p class="gr">Reliable</p>
+        <p class="gr">Cost Effective</p>
+        <p class="gr">Safe</p>
+        <p class="gr">Easy to use</p>
+        </marquee> 
+      </div>
+    <div class="card" style="border:1px solid black; border-radius: 20px; background-color: azure;">
+      <h3>Follow us at:- </h3>
+        <img src="fb.png" width="20px" height="20px"><a href="https://www.facebook.com" style="color: black; padding: 10px;">Facebook</a></br>
+        <img src="ig.png" width="20px" height="20px"><a href="htttps://www.instagram.com " style="color: black; padding: 10px">Instagram</a></br>
+        <img src="tw.png" width="20px" height="20px"><a href="https://www.twitter.com" style="color: black; padding: 10px">Twitter</a>
+    </div>
+  </div>
+</div>
+<div class="card extra" style="border: 1px solid black; background-color:cornflowerblue; color: white; width: auto; border-radius: 20px;">
+      
+      <h2>How to ?</h2>
+      <h5 style="color: white; font-size: 18px;">An attempt has been made to make lives of people easier by allowing to have safe rides, and to avoid using public transport as they are over-crowded and are unsafe .This is going to make life easier of both , the person who shared the ride and the person who is sharing the ride as a customer as he will be paid by customer.You can add a ride or find a ride ! </h5>
+      <p style="color:white; font-size: 20px;">You can add a ride or find a ride. Start Now ! </p>
+    </div>
+<div class="footer" style="background-color: cadetblue; border-radius: 20px;">
+  <h4 style="font-size: 18px; background-color: aliceblue; font-family:monospace; border-radius: 20px;">All Rights Reserved &copy CarShare 2020</h4   >
+</div>
+<script>
+       function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('timm').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+    var d = new Date();
+document.getElementById("datt").innerHTML = d.toDateString();
+    </script>
+</body>
+</html>
